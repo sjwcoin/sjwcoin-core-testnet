@@ -910,10 +910,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\SJWcoin
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\SJWcoin
     // Mac: ~/Library/Application Support/SJWcoin
-    // Unix: ~/.sjwcoin
+    // Unix: ~/.sjwcoin-core-testnet
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "SJWcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "SJWcoin-core-testnet";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -928,7 +928,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "SJWcoin";
 #else
     // Unix
-    return pathRet / ".sjwcoin";
+    return pathRet / ".sjwcoin-core-testnet";
 #endif
 #endif
 }

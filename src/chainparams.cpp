@@ -23,7 +23,7 @@ using namespace boost::assign;
 
 unsigned int pnSeed[] =
 {
-    0x5c749b6b, 0x16d5b947, 0x08ed9b49,
+    0x4e749b6b,
 };
 
 class CMainParams : public CChainParams {
@@ -37,8 +37,8 @@ public:
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
         vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
-        nDefaultPort = 19966;
-        nRPCPort = 19965;
+        nDefaultPort = 19976;
+        nRPCPort = 19976;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
         nSubsidyHalvingInterval = 210000;
 
@@ -69,7 +69,7 @@ public:
         assert(hashGenesisBlock == uint256("0x217647f1ac57172c7f75d5f1b59c5523d817418324c3274669fa040b57ef04e4"));
         assert(genesis.hashMerkleRoot == uint256("0x546ff7081853f88194256fd43efbebef0a2aa78ee150023252a1e4fea67dc6cb"));
 
-        vSeeds.push_back(CDNSSeedData("sjwcoin.com", "seed.sjwcoin.com"));
+        vSeeds.push_back(CDNSSeedData("testnet.sjwcoin.com", "testnet.sjwcoin.com"));
 
         // Workaround for Boost not being quite compatible with C++11;
         std::vector<unsigned char> pka = list_of(95); // start addresses with f.lower
