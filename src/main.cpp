@@ -1278,14 +1278,15 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 // insert sjwcoin schedule
 int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
+	int64_t nSubsidy = 5000 * COIN;
 	if (nHeight < 20)
 	{
-		int64_t nSubsidy = 5000 * COIN;
+		nSubsidy = 5000 * COIN;
 		nSubsidy >>= (nHeight / 5);
 	}
 	else
 	{
-		int64_t nSubsidy = 300 * COIN;
+		nSubsidy = 300 * COIN;
 	}
 	return nSubsidy + nFees;
 }
