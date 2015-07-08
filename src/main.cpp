@@ -1279,14 +1279,35 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
 	int64_t nSubsidy = 5000 * COIN;
-	if (nHeight < 20)
+	
+	if (nHeight < 6)
 	{
 		nSubsidy = 5000 * COIN;
-		nSubsidy >>= (nHeight / 5);
+		//nSubsidy >>= (nHeight / 5);
+	}
+	else if (nHeight < 11)
+	{
+		nSubsidy = 2500 * COIN;
+	}
+	else if (nHeight < 16)
+	{
+		nSubsidy = 1250 * COIN;
+	}
+	else if (nHeight < 21)
+	{
+		nSubsidy = 625 * COIN;
+	}
+	else if (nHeight < 26)
+	{
+		nSubsidy = 312 * COIN;
+	}
+	else if (nHeight < 36)
+	{
+		nSubsidy = 156 * COIN;
 	}
 	else
 	{
-		nSubsidy = 300 * COIN;
+		nSubsidy = 100 * COIN;
 	}
 	return nSubsidy + nFees;
 }
