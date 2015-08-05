@@ -69,7 +69,7 @@ public:
         assert(hashGenesisBlock == uint256("0x217647f1ac57172c7f75d5f1b59c5523d817418324c3274669fa040b57ef04e4"));
         assert(genesis.hashMerkleRoot == uint256("0x546ff7081853f88194256fd43efbebef0a2aa78ee150023252a1e4fea67dc6cb"));
 
-        vSeeds.push_back(CDNSSeedData("sjwcoin.com", "seed.sjwcoin.com"));
+        vSeeds.push_back(CDNSSeedData("testnet.sjwcoin.com", "testnet-seed.sjwcoin.com"));
 
         // Workaround for Boost not being quite compatible with C++11;
         std::vector<unsigned char> pka = list_of(95); // start addresses with f.lower
