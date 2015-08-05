@@ -1,9 +1,10 @@
-# SJWcoin Core [SJW, Ж]
+# SJWcoin Core TESTNET[SJW, Ж]
 ==========================
 # SJW 1.8.3 Release #
 ==========================
 <img src="http://postox.com/images/2015/06/17/splash.png" /> 
 
+This is the TESTNET RELEASE. ports RPC:19975 // P2P:19976
 
 The current block reward schedule:
 
