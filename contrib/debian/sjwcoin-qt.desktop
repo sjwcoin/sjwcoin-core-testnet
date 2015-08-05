@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SJWcoin
+Comment=SJWcoin P2P Cryptocurrency
+Comment[fr]=SJWcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=SJWcoin, eşten eşe kriptografik sanal para birimi
+Exec=sjwcoin-qt %u
+Terminal=false
+Type=Application
+Icon=sjwcoin128
+MimeType=x-scheme-handler/sjwcoin;
+Categories=Office;Finance;
